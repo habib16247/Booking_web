@@ -1,0 +1,123 @@
+@font-face {
+    font-family: KumbhSans;
+    src: url("../../assets/fonts/KumbhSans-Regular.ttf");
+}
+
+* {
+    font-family: KumbhSans;
+}
+
+.home {
+    position: relative;
+}
+
+
+.bg {
+    background-image: url("https://i.vimeocdn.com/video/916862503-8b93cbde09e694ac48d190d42b4f35a81283a0a03304058b8046b5647e2b1aef-d?mw=900&mh=507");
+    background-position: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 10px 10px;
+    /* animation: change 25s infinite ease; */
+}
+
+
+/* @keyframes change {
+    0% {
+        background-position: 10%;
+        background-image: url("https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?cs=srgb&dl=pexels-andrei-tanase-1271619.jpg&fm=jpg");
+    }
+    40% {
+        background-position: 30%;
+        background-image: url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D");
+    }
+    60% {
+        background-position: 40%;
+        background-image: url("https://images.unsplash.com/photo-1542856391-010fb87dcfed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDExfHx8ZW58MHx8fHx8&w=1000&q=80");
+    }
+    80% {
+        background-position: 70%;
+        background-image: url("https://media.istockphoto.com/id/487794714/photo/bikers-in-mountainous-tour.webp?b=1&s=170667a&w=0&k=20&c=xW7_EiM68wGkFupYv9EbmDrI8Wewql2BaV0iYJBuULM=");
+    }
+    100% {
+        background-position: 90%;
+        background-image: url("https://watermark.lovepik.com/photo/20211208/large/lovepik-road-road-trip-departure-picture_501672353.jpg");
+    }
+} */
+
+
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    backdrop-filter: blur(1px);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.contents {
+    width: 100%;
+    max-width: 1224px;
+    margin: auto;
+}
+
+.textContent {
+    width: 100%;
+    max-width: 1225px;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+
+
+.skew {
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #F7921E;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 145px;
+    position: absolute;
+    transform: rotate(-12deg);
+    top: -1.05rem;
+    left: -1.5rem;
+}
+
+.startPoint {
+    font-size: 50px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+
+.avilable {
+    font-family: KumbhSans;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.booking {
+    color: #63AB45;
+}
+
+.startBtn {
+    font-size: 15px;
+    width: fit-content;
+    background: #63AB45;
+    padding: 0.7rem 1rem;
+    border: 0;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: KumbhSans;
+    letter-spacing: 1.3px;
+}

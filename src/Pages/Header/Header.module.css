@@ -1,0 +1,105 @@
+/* Header.module.css */
+.searchBar {
+    height: auto;
+    margin-top: 50px;
+}
+/* General Styles */
+.headerSearch {
+    max-width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-content: space-between; 
+    gap: 3rem;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.headerIcon {
+    font-size: 30px;
+    color: rgb(61, 241, 16);
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.headerSearchInput {
+    border: 0;
+    outline: none;
+    height: 100%;  /* Full height to match container */
+    width: 200px;  /* Fixed width or adjust as needed */
+    padding: 10px;  /* Added padding for better appearance */
+}
+
+.headerSearchText {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 100%;  /* Adjusted position for better dropdown alignment */
+    left: 0;
+    z-index: 1;  /* Ensuring dropdown appears above other elements */
+}
+
+/* Options Dropdown Styles */
+.options {
+    position: absolute;
+    top: 100%;  /* Adjusted position for better dropdown alignment */
+    left: 0;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #79727296;
+    padding: 1rem;
+    z-index: 1;  /* Ensuring dropdown appears above other elements */
+}
+
+.optionItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;  /* Cursor pointer for better UX */
+}
+
+.optionCounterButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; 
+}
+
+
+.searchBTN {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    background: rgb(61, 241, 16);
+    margin-right: -22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
