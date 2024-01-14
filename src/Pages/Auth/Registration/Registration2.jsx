@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./registration.module.css";
+import styles from "./Registration.module.css";
 import { FaUser, FaEnvelope, FaLock, FaPhone, FaBuilding } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import axios from "axios";
