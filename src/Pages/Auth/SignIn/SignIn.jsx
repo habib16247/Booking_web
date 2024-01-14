@@ -3,7 +3,7 @@ import { FaEnvelope, FaLock, FaUser } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { NavLink, useNavigate } from 'react-router-dom'; // Add this line
-import styles from "../Registration/registration.module.css"; // Ensure correct path
+import styles from "../Registration/Registration.module.css"; // Ensure correct path
 import { useAuth } from '../../../AuthProvider/AuthProvider';
 
 
