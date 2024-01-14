@@ -18,6 +18,7 @@
     position: relative;
 }
 
+
 .headerIcon {
     font-size: 30px;
     color: rgb(61, 241, 16);
@@ -27,33 +28,37 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    position: relative;
 }
 
 .headerSearchInput {
     border: 0;
     outline: none;
-    height: 100%;  /* Full height to match container */
-    width: 200px;  /* Fixed width or adjust as needed */
-    padding: 10px;  /* Added padding for better appearance */
+    height: 100%; 
+    width: 200px; 
+    padding: 10px; 
 }
-
 .headerSearchText {
     color: lightgray;
     cursor: pointer;
 }
 
 .date {
+    max-width: 300px;
     position: absolute;
-    top: 100%;  /* Adjusted position for better dropdown alignment */
-    left: 0;
-    z-index: 1;  /* Ensuring dropdown appears above other elements */
+    top: 35%;
+    right: 0;
+    left: 2px;
+    z-index: 1;  
+    font-size: 1px;
+    border: 1px solid #000;
 }
+
+
 
 /* Options Dropdown Styles */
 .options {
     position: absolute;
-    top: 100%;  /* Adjusted position for better dropdown alignment */
+    top: 100%;
     left: 0;
     width: 200px;
     display: none;
