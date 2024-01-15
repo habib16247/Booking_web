@@ -47,7 +47,7 @@
     position: absolute;
     top: 35%;
     right: 0;
-    left: 2px;
+    left: 40%;
     z-index: 1;  
     font-size: 1px;
     border: 1px solid #000;
@@ -106,5 +106,11 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
+}
+
+@media (max-width: 468px) {
+    .date {
+        left: 10px;
+    }
 }
 

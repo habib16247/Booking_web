@@ -17,9 +17,8 @@
     background-position: 75%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: clamp(500px, 100vh, 800px);
     border-radius: 0px 0px 10px 10px;
-    /* animation: change 25s infinite ease; */
 }
 
 

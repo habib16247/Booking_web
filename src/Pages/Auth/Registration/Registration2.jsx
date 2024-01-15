@@ -3,10 +3,11 @@ import styles from "./Registration.module.css";
 import { FaUser, FaEnvelope, FaLock, FaPhone, FaBuilding } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Registration2 = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigate = useNavigate()
 
   const onSubmit = async (data) => {
     try {

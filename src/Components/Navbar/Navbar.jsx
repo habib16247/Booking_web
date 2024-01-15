@@ -10,16 +10,25 @@ const Navbar = () => {
 
   
   const [isOpen, setIsOpen] = useState(false);
+  const [auth, setAuth] = useState(false);
+
   const navbarRef = useRef(null);
+
+  const toggleAuth = () => {
+    setAuth(!auth)
+    setIsOpen(false)
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setAuth(false)
 };
 
 const handleClickOutside = (event) => {
 
     if (navbarRef.current && !navbarRef.current.contains(event.target)) {
         setIsOpen(false);
+        setAuth(false)
     }
 };
 
@@ -84,15 +93,15 @@ useEffect(() => {
             <span className={styles.icons}>
               <FaMagnifyingGlass />
             </span>
-            <div className={styles.authentication}>
+            <div onClick={toggleAuth} className={styles.authentication}>
               <span className={styles.icons}>
                 <CgProfile />
               </span>
 
-              <div className={styles.authBtn}>
+              {auth ? <div className={styles.authBtn}>
                 <NavLink className={styles.signAuthBtn} to="/signup2">Sign Up</NavLink>
                 <NavLink className={styles.signAuthBtn} to="/signin">Sign In</NavLink>
-              </div>
+              </div> : null}
             </div>
           </div>
         </div>
